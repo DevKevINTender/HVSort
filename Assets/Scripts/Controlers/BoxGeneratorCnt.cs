@@ -1,5 +1,6 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static SessionCore;
 public class BoxGeneratorCnt : MonoBehaviour
@@ -8,35 +9,98 @@ public class BoxGeneratorCnt : MonoBehaviour
     [Header("Generator Settings:")]
     [SerializeField] private Vector2 spawnStartPos;
     [SerializeField] private int maxColumn;
-    [SerializeField] private int step;
+    [SerializeField] private float step;
     [SerializeField] private BoxCom boxComPb;
     [Header("Generator Result:")]
     public List<BoxCom> boxList = new List<BoxCom>();
+    public List<BoxCom> extraBoxList = new List<BoxCom>();
+    public List<BoxCom> activeBoxList = new List<BoxCom>();
 
-    public List<BoxCom> GenerateNewBoxList(int colorCount, int freeBoxCount, BoxDel boxChoose)
+    public Transform platfromForBoxs;
+    
+    public void GenerateNewBoxList(int colorCount, int freeBoxCount, BoxDel boxChoose, BoxGeneratorSettingsDel settings)
     {
         int countColumn = 0;
         int countRow = 0;
-        for (int i = 0; i < colorCount + freeBoxCount; i++)
+        
+        for (int i = 0; i < 10; i++)
         {
             Vector2 newPos = new Vector2(spawnStartPos.x + countColumn * step,  spawnStartPos.y + (-countRow * step * 5));
             BoxCom newBoxCom = Instantiate(boxComPb, newPos, Quaternion.identity);
-            newBoxCom.InitComponent(boxChoose, i);
+            newBoxCom.transform.SetParent(platfromForBoxs);
+            newBoxCom.InitComponent(boxChoose, i, countRow);
             boxList.Add(newBoxCom);
-            
             countColumn++;
+            if (i < (freeBoxCount + colorCount))
+            {
+                activeBoxList.Add(newBoxCom);
+            }
+            else
+            {
+                extraBoxList.Add(newBoxCom);
+            }
+           
             if (countColumn == maxColumn)
             {
                 countColumn = 0;
                 countRow++;
             }
         }
-        return boxList;
+        AlignBoxes(activeBoxList);
+        HideExtra(extraBoxList);
+        UpdatePlatformForBoxs();
+        
+        settings?.Invoke(boxList, activeBoxList,extraBoxList);
     }
 
-    public void InitBoxCom()
+    private void AlignBoxes(List<BoxCom> boxComList)
     {
-       
+        List<BoxCom> rowBox = new List<BoxCom>();
+        for (int i = 0; i <boxComList.Count; i ++)
+        {
+            rowBox.Add(boxComList[i]);
+            if(rowBox.Count == maxColumn || i == (boxComList.Count - 1))
+            {
+                float newX = -(rowBox.Count - 1) * (step / 2);
+                for (int j = 0; j < rowBox.Count; j++)
+                {
+                    rowBox[j].transform.position = new Vector2(newX + j * step,  rowBox[j].transform.position.y);
+                }
+                rowBox.Clear();
+            }
+        }
+    }
+
+    private void UpdatePlatformForBoxs()
+    {
+        if (activeBoxList.Count / (float) maxColumn > 1)
+        {
+            platfromForBoxs.transform.position = new Vector3(0,0,0);
+        }
+        else
+        {
+            platfromForBoxs.transform.position = new Vector3(0,-1,0);
+        }
+    }
+    private void HideExtra(List<BoxCom> boxComList)
+    {
+        foreach (var item in boxComList)
+        {
+            item.gameObject.SetActive(false);
+        }
+    }
+
+    public void ShowExtra()
+    {
+        if (extraBoxList.Count > 0)
+        {
+            BoxCom showBox = extraBoxList.Last();
+            extraBoxList.Remove(showBox);
+            activeBoxList.Add(showBox);
+            showBox.gameObject.SetActive(true);
+            AlignBoxes(activeBoxList);
+            UpdatePlatformForBoxs();
+        }
     }
     
 }

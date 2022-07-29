@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using static SessionCore;
 public class PartSawpCnt : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private PartSawpComplete partSawpComplete;
+    public void InitControler(PartSawpComplete partSawpComplete)
+    {
+        this.partSawpComplete = partSawpComplete;
+    }
     public bool PartSwap(BoxCom fromBox, BoxCom toBox)
     {
         if ((CheckFreeSlots(toBox) && FullFreeSlots(toBox)) || (CheckFreeSlots(toBox) && TheSamePartColor(fromBox, toBox)))
@@ -12,6 +16,7 @@ public class PartSawpCnt : MonoBehaviour
             PartCom swapPart = fromBox.GetFirstPart();
             fromBox.RemoveOldPart(swapPart);
             toBox.AddNewPart(swapPart);
+            partSawpComplete?.Invoke(fromBox, toBox, swapPart);
             PartSwap(fromBox,toBox);
         }
         return true;

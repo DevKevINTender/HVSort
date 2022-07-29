@@ -18,14 +18,14 @@ public class BoxAnim : MonoBehaviour
     {
         mySequence.Kill();
         mySequence = DOTween.Sequence();
-        mySequence.Append(transform.DOMoveY(startPos.y + 1, 0.25f));
+        mySequence.Append(transform.DOMoveY(startPos.y + 0.25f, 0.1f));
         mySequence.OnComplete(() => completed?.Invoke());
     }
     public void BoxDown(BoxMoveCompleted completed)
     {
         mySequence.Kill();
         mySequence = DOTween.Sequence();
-        mySequence.Append(transform.DOMoveY(startPos.y, 0.25f));
+        mySequence.Append(transform.DOMoveY(startPos.y, 0.1f));
         mySequence.OnComplete(() => completed?.Invoke());
     }
 }

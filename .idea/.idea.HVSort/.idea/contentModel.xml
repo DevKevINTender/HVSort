@@ -24,23 +24,123 @@
             </e>
           </e>
         </e>
+        <e p="Resources" t="Include">
+          <e p="ScriptableObjects" t="Include">
+            <e p="AnimationsSO" t="Include">
+              <e p="SkriptsSO" t="Include">
+                <e p="AnimationListScrObj.cs" t="Include" />
+                <e p="AnimationScrObj.cs" t="Include" />
+              </e>
+            </e>
+            <e p="BackGroundSO" t="Include">
+              <e p="SkriptsSO" t="Include">
+                <e p="BackGroundListScrObj.cs" t="Include" />
+                <e p="BackGroundScrObj.cs" t="Include" />
+              </e>
+            </e>
+            <e p="LevelsSO" t="Include">
+              <e p="ScriptsSO" t="Include">
+                <e p="LevelListScrObj.cs" t="Include" />
+                <e p="LevelScrObj.cs" t="Include" />
+                <e p="LevelScrObjGenerator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="SkinsSO" t="Include">
+              <e p="ScriptsSO" t="Include">
+                <e p="SkinListScrObj.cs" t="Include" />
+                <e p="SkinScrObj.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Animation DOTween" t="Include">
             <e p="BoxAnim.cs" t="Include" />
+            <e p="ButtonSizeAnim.cs" t="Include" />
             <e p="PartAnim.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
             <e p="BoxCom.cs" t="Include" />
             <e p="PartCom.cs" t="Include" />
+            <e p="PartTypeCom.cs" t="Include" />
           </e>
           <e p="Controlers" t="Include">
+            <e p="BackMoveCnt.cs" t="Include" />
             <e p="BoxChooserCnt.cs" t="Include" />
             <e p="BoxFillerCnt.cs" t="Include" />
             <e p="BoxGeneratorCnt.cs" t="Include" />
+            <e p="LevelCompleteCnt.cs" t="Include" />
             <e p="PartSawpCnt.cs" t="Include" />
+            <e p="SessionSettingsCnt.cs" t="Include" />
+          </e>
+          <e p="ControlersData" t="Include">
+            <e p="AnimationCnt.cs" t="Include" />
+            <e p="BackGroundCnt.cs" t="Include" />
+            <e p="CoinsCnt.cs" t="Include" />
+            <e p="LevelsCnt.cs" t="Include" />
+            <e p="SkinsCnt.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
             <e p="SessionCore.cs" t="Include" />
+          </e>
+          <e p="Views" t="Include">
+            <e p="LevelPanelView" t="Include">
+              <e p="LevelItemView.cs" t="Include" />
+              <e p="LevelPageView.cs" t="Include" />
+              <e p="LevelPanelView.cs" t="Include" />
+            </e>
+            <e p="MainMenuPanelView" t="Include">
+              <e p="AnimationPanelView" t="Include">
+                <e p="AnimationItemView.cs" t="Include" />
+                <e p="AnimationPanelView.cs" t="Include" />
+              </e>
+              <e p="BackGroundPanelView" t="Include">
+                <e p="BackGroundItemView.cs" t="Include" />
+                <e p="BackGroundPanelView.cs" t="Include" />
+              </e>
+              <e p="MainMenuPanelVIew.cs" t="Include" />
+              <e p="SettingsPanelView.cs" t="Include" />
+              <e p="SkinPanelView" t="Include">
+                <e p="SkinItemView.cs" t="Include" />
+                <e p="SkinPanelView.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Session" t="Include">
+              <e p="BackMoveVIew.cs" t="Include" />
+              <e p="SessionPanelView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="WanzyeeStudio" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Runtime" t="Include">
+              <e p="Concrete" t="Include">
+                <e p="Json" t="Include">
+                  <e p="BoundsConverter.cs" t="Include" />
+                  <e p="ColorConverter.cs" t="Include" />
+                  <e p="DictionaryConverter.cs" t="Include" />
+                  <e p="JsonNetUtility.cs" t="Include" />
+                  <e p="Matrix4x4Converter.cs" t="Include" />
+                  <e p="PartialConverter.cs" t="Include" />
+                  <e p="QuaternionConverter.cs" t="Include" />
+                  <e p="RectConverter.cs" t="Include" />
+                  <e p="RectOffsetConverter.cs" t="Include" />
+                  <e p="Vector2Converter.cs" t="Include" />
+                  <e p="Vector3Converter.cs" t="Include" />
+                  <e p="Vector4Converter.cs" t="Include" />
+                </e>
+              </e>
+              <e p="WanzyeeStudio.Runtime.asmdef" t="Include" />
+            </e>
+          </e>
+          <e p="ThirdParty" t="Include">
+            <e p="SaladLab" t="Include">
+              <e p="Json.Net.Unity3D" t="Include">
+                <e p="JsonNet.unitypackage.json" t="Include" />
+                <e p="LICENSE.txt" t="Include" />
+                <e p="link.xml" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
       </e>
@@ -48,6 +148,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="WanzyeeStudio.Runtime.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
