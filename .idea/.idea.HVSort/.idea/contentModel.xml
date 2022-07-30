@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Konstantin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Konstantin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HVSort.-1962185901.00" t="ExcludeRecursive" />
-    <e p="E:\0_UnityProjects\HVSort" t="IncludeRecursive">
+    <e p="C:\Users\Администратор\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Администратор\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HVSort.-1242677246.00" t="ExcludeRecursive" />
+    <e p="D:\0_UnityProjects\HVSort\HVSort" t="IncludeRecursive">
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -36,6 +36,12 @@
               <e p="SkriptsSO" t="Include">
                 <e p="BackGroundListScrObj.cs" t="Include" />
                 <e p="BackGroundScrObj.cs" t="Include" />
+              </e>
+            </e>
+            <e p="DailySo" t="Include">
+              <e p="ScriptsSO" t="Include">
+                <e p="DailyListScrObj.cs" t="Include" />
+                <e p="DailyScrObj.cs" t="Include" />
               </e>
             </e>
             <e p="LevelsSO" t="Include">
@@ -77,6 +83,7 @@
             <e p="AnimationCnt.cs" t="Include" />
             <e p="BackGroundCnt.cs" t="Include" />
             <e p="CoinsCnt.cs" t="Include" />
+            <e p="DailyCnt.cs" t="Include" />
             <e p="LevelsCnt.cs" t="Include" />
             <e p="SkinsCnt.cs" t="Include" />
           </e>
@@ -103,6 +110,13 @@
               <e p="SkinPanelView" t="Include">
                 <e p="SkinItemView.cs" t="Include" />
                 <e p="SkinPanelView.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Result" t="Include">
+              <e p="DailyPanelView" t="Include">
+                <e p="DailyInfoView.cs" t="Include" />
+                <e p="DailyItemView.cs" t="Include" />
+                <e p="DailyPanelView.cs" t="Include" />
               </e>
             </e>
             <e p="Session" t="Include">

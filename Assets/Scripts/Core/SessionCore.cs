@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ControlersData;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,6 @@ public class SessionCore : MonoBehaviour
     public LevelCompleteCnt levelCompleteCnt;
     public SessionSettingsCnt sessionSettingsCnt;
 
-    
     public SessionPanelView SessionPanelView;
     public LevelPanelView LevelPanelView;
     public MainMenuPanelVIew MainMenuPanelVIew;
@@ -39,6 +39,8 @@ public class SessionCore : MonoBehaviour
         PlayerPrefs.SetInt("BackMoveCount",10);
         PlayerPrefs.SetInt("Coins", 5000);
         DOTween.Init();
+        
+        DailyCnt.InitControler();
         
         sessionSettingsCnt.InitControler();
         partSawpCnt.InitControler(SwapCompleted);

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
+using Views.Result.DailyPanelView;
 
 public class SessionPanelView : MonoBehaviour
 {
     public Text currentLevelText;
     public MainMenuPanelVIew mainMenuPanel;
+    public DailyInfoView DailyInfoView;
     
     [SerializeField] private Image backGround;
     
@@ -15,6 +17,7 @@ public class SessionPanelView : MonoBehaviour
     {
         currentLevelText.text = LevelsCnt.GetCurrentLevelID() + 1 +"";
         UpdateBackGround();
+        DailyInfoView.InitView();
     }
 
     public void OpenMainMenu()

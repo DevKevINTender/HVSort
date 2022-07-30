@@ -20,58 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be61885-8b25-4f10-b1a0-5c36a4824387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinListScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinListScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinScrObj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinScrObj.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/CoinsCnt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/CoinsCnt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundItemView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundItemView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SettingsPanelView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SettingsPanelView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyListScrObj.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyListScrObj.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyScrObj.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyScrObj.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/DailyCnt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/DailyCnt.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyInfoView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyInfoView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Session.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Session/BoxComPb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Session/BoxComPb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Session/PartComPb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Session/PartComPb.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationPanelView.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationPanelView.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Session.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Session.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/BoxAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/BoxAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PartAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PartAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/PartCom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/PartCom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxFillerCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxFillerCnt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,30 +48,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A317319-33E0-419C-A5A9-95305014AD37/59/26e3f120/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FDEE1383-DB0F-4513-9528-62F91D61E502/4d/c0a649fd/JsonReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/b9/f1734872/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/c2/ea818fe4/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PartTypeCom.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A317319-33E0-419C-A5A9-95305014AD37/68/5dac8de5/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E40E5A8F-982C-4B61-8A93-0D29F9BD091C/12/8c19ae56/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ControlersData/LevelsCnt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PartTypeCom.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/BackMoveVIew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/BackMoveView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" />
-        <option value="$PROJECT_DIR$/../../PythonProjects/ball-sort-puzzle-bot-master/app/new_file.json" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelScrObjGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelListScrObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptsSO/LevelScrObjGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelsSO/ScriptsSO/LevelScrObjGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelsSO/ScriptsSO/LevelListScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/LevelsCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LevelsSO/ScriptsSO/LevelScrObj.cs" />
@@ -134,11 +85,9 @@
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundItemView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView/LevelPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/ButtonSzeAnim.cs" />
@@ -150,6 +99,16 @@
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/MainMenuPanelVIew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DaillyScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyListScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/DailyPanelView/DailyPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyItemView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyInfoView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/DailyCnt.cs" />
       </list>
     </option>
   </component>
@@ -214,6 +173,8 @@
       <workItem from="1658901092707" duration="595000" />
       <workItem from="1658902931552" duration="7000" />
       <workItem from="1658902959054" duration="11292000" />
+      <workItem from="1659162279354" duration="8000" />
+      <workItem from="1659165786102" duration="18757000" />
     </task>
     <servers />
   </component>
@@ -238,6 +199,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="408" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1659188665714">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="586" y="408" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1739.939@0.0.1739.939" timestamp="1659188665714" />
     <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1657722095421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
