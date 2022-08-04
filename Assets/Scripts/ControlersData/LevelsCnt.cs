@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using ControlersData;
 using ScriptableObjects.LevelsSO;
 using UnityEngine;
 
@@ -48,11 +49,15 @@ public class LevelsCnt
             LevelListSO.Save();
         }
     }
-    
-    public static List<LevelScrObj> GetSessionLevelsFromPage(int pageId)
+
+    public static void GetLevelReward()
     {
         LevelListSO.Load();
-        int itemOnPage = 9;
+        CoinsCnt.AddCoins(GetCurrentLevel().reward);
+    }
+    public static List<LevelScrObj> GetSessionLevelsFromPage(int pageId, int itemOnPage)
+    {
+        LevelListSO.Load();
         List<LevelScrObj> list = new List<LevelScrObj>();
         for (int i = 0 + itemOnPage * pageId; i <itemOnPage + itemOnPage * pageId; i++)
         {

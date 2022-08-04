@@ -1,16 +1,18 @@
     using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+    using ControlersData;
+    using UnityEngine;
 using static SessionCore;
 public class BoxGeneratorCnt : MonoBehaviour
 {
     //generator settings
     [Header("Generator Settings:")]
     [SerializeField] private Vector2 spawnStartPos;
-    [SerializeField] private int maxColumn;
+    [SerializeField] private int maxColumnInRow;
     [SerializeField] private float step;
     [SerializeField] private BoxCom boxComPb;
+    [SerializeField] private int totalMaxColum;
     [Header("Generator Result:")]
     public List<BoxCom> boxList = new List<BoxCom>();
     public List<BoxCom> extraBoxList = new List<BoxCom>();
@@ -23,7 +25,7 @@ public class BoxGeneratorCnt : MonoBehaviour
         int countColumn = 0;
         int countRow = 0;
         
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < totalMaxColum; i++)
         {
             Vector2 newPos = new Vector2(spawnStartPos.x + countColumn * step,  spawnStartPos.y + (-countRow * step * 5));
             BoxCom newBoxCom = Instantiate(boxComPb, newPos, Quaternion.identity);
@@ -40,7 +42,7 @@ public class BoxGeneratorCnt : MonoBehaviour
                 extraBoxList.Add(newBoxCom);
             }
            
-            if (countColumn == maxColumn)
+            if (countColumn == maxColumnInRow)
             {
                 countColumn = 0;
                 countRow++;
@@ -59,7 +61,7 @@ public class BoxGeneratorCnt : MonoBehaviour
         for (int i = 0; i <boxComList.Count; i ++)
         {
             rowBox.Add(boxComList[i]);
-            if(rowBox.Count == maxColumn || i == (boxComList.Count - 1))
+            if(rowBox.Count == maxColumnInRow || i == (boxComList.Count - 1))
             {
                 float newX = -(rowBox.Count - 1) * (step / 2);
                 for (int j = 0; j < rowBox.Count; j++)
@@ -73,13 +75,13 @@ public class BoxGeneratorCnt : MonoBehaviour
 
     private void UpdatePlatformForBoxs()
     {
-        if (activeBoxList.Count / (float) maxColumn > 1)
+        if (activeBoxList.Count / (float) maxColumnInRow > 1)
         {
             platfromForBoxs.transform.position = new Vector3(0,0,0);
         }
         else
         {
-            platfromForBoxs.transform.position = new Vector3(0,-1,0);
+            platfromForBoxs.transform.position = new Vector3(0,-3,0);
         }
     }
     private void HideExtra(List<BoxCom> boxComList)
@@ -94,7 +96,8 @@ public class BoxGeneratorCnt : MonoBehaviour
     {
         if (extraBoxList.Count > 0)
         {
-            BoxCom showBox = extraBoxList.Last();
+            DailyCnt.AddPointToDailyItemComplete(4,1);
+            BoxCom showBox = extraBoxList[0];
             extraBoxList.Remove(showBox);
             activeBoxList.Add(showBox);
             showBox.gameObject.SetActive(true);

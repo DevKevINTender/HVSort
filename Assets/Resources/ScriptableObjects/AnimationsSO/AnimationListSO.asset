@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SavePath: Animations
   CurrentAnimationId: 0
-  OpenedAnimationIdList: 00000000010000000300000002000000
+  OpenedAnimationIdList: 00000000
   list:
   - {fileID: 11400000, guid: 636999cd7b4c6f2478c985ae49646c67, type: 2}
   - {fileID: 11400000, guid: c68dba76c4eee2d4c8269d4fa84dc056, type: 2}

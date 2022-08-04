@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Администратор\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Администратор\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HVSort.-1242677246.00" t="ExcludeRecursive" />
-    <e p="D:\0_UnityProjects\HVSort\HVSort" t="IncludeRecursive">
+    <e p="C:\Users\Konstantin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Konstantin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HVSort.-1962185901.00" t="ExcludeRecursive" />
+    <e p="E:\0_UnityProjects\HVSort" t="IncludeRecursive">
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -51,6 +51,12 @@
                 <e p="LevelScrObjGenerator.cs" t="Include" />
               </e>
             </e>
+            <e p="ProgressSO" t="Include">
+              <e p="ScriptsSO" t="Include">
+                <e p="ProgressListScrObj.cs" t="Include" />
+                <e p="ProgressScrObj.cs" t="Include" />
+              </e>
+            </e>
             <e p="SkinsSO" t="Include">
               <e p="ScriptsSO" t="Include">
                 <e p="SkinListScrObj.cs" t="Include" />
@@ -67,6 +73,7 @@
           </e>
           <e p="Components" t="Include">
             <e p="BoxCom.cs" t="Include" />
+            <e p="FullCom.cs" t="Include" />
             <e p="PartCom.cs" t="Include" />
             <e p="PartTypeCom.cs" t="Include" />
           </e>
@@ -85,6 +92,8 @@
             <e p="CoinsCnt.cs" t="Include" />
             <e p="DailyCnt.cs" t="Include" />
             <e p="LevelsCnt.cs" t="Include" />
+            <e p="PartColorPacksCnt.cs" t="Include" />
+            <e p="ProgressCnt.cs" t="Include" />
             <e p="SkinsCnt.cs" t="Include" />
           </e>
           <e p="Core" t="Include">
@@ -112,16 +121,25 @@
                 <e p="SkinPanelView.cs" t="Include" />
               </e>
             </e>
-            <e p="Result" t="Include">
+            <e p="ResultMenuPanelView" t="Include">
               <e p="DailyPanelView" t="Include">
                 <e p="DailyInfoView.cs" t="Include" />
                 <e p="DailyItemView.cs" t="Include" />
                 <e p="DailyPanelView.cs" t="Include" />
               </e>
+              <e p="ProgressPanelView" t="Include">
+                <e p="ProgressInfoView.cs" t="Include" />
+                <e p="ProgressPanelView.cs" t="Include" />
+              </e>
+              <e p="ResultMenuPanelView.cs" t="Include" />
             </e>
             <e p="Session" t="Include">
               <e p="BackMoveVIew.cs" t="Include" />
               <e p="SessionPanelView.cs" t="Include" />
+            </e>
+            <e p="WinPanelView" t="Include">
+              <e p="WinCompleteLevelPanelView.cs" t="Include" />
+              <e p="WinPanelView.cs" t="Include" />
             </e>
           </e>
         </e>

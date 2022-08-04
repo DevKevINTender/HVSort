@@ -4,12 +4,15 @@ using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
 using Views.Result.DailyPanelView;
+using Views.ResultMenuPanelView.ProgressPanelView;
 
 public class SessionPanelView : MonoBehaviour
 {
     public Text currentLevelText;
     public MainMenuPanelVIew mainMenuPanel;
+    public ResultMenuPanelView resultMenuPanel;
     public DailyInfoView DailyInfoView;
+    public ProgressInfoView ProgressInfoView;
     
     [SerializeField] private Image backGround;
     
@@ -18,6 +21,7 @@ public class SessionPanelView : MonoBehaviour
         currentLevelText.text = LevelsCnt.GetCurrentLevelID() + 1 +"";
         UpdateBackGround();
         DailyInfoView.InitView();
+        ProgressInfoView.InitView();
     }
 
     public void OpenMainMenu()
@@ -26,6 +30,12 @@ public class SessionPanelView : MonoBehaviour
         mainMenuPanel.InitView();
     }
 
+    public void OpenResultMenu()
+    {
+        resultMenuPanel.gameObject.SetActive(true);
+        resultMenuPanel.InitView();
+    }
+    
     public void Start()
     {
         BackGroundCnt.SetCurrentBackGroundEvent += UpdateBackGround;

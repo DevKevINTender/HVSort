@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00fe03cfe574bf5a88c32d7f19aac85, type: 3}
+  m_Name: LevelSO38
+  m_EditorClassIdentifier: 
+  id: 38
+  coloredBoxCount: 8
+  freeBoxCount: 2
+  reward: 250
+  colorPackId: 0
+  list:
+  - list: 01000000040000000300000002000000
+  - list: 03000000030000000500000004000000
+  - list: 00000000000000000600000000000000
+  - list: 04000000000000000700000004000000
+  - list: 02000000050000000700000006000000
+  - list: 03000000010000000200000001000000
+  - list: 05000000070000000600000002000000
+  - list: 06000000010000000500000007000000
+  - list: 
+  - list: 
+  - list: 
+  - list: 

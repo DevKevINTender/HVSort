@@ -22,13 +22,12 @@ public class LevelPanelView : MonoBehaviour
     public void InitView(SelectLevelDel selectLevelDel)
     {
         this.selectLevelDel = selectLevelDel;
-        currentPageId = 0;
-        currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
-        currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId), SelectCurrentLevel);
-        
         currentPageId =  (int) Math.Floor((double) LevelsCnt.GetCurrentLevelID() / itemOnPage);
         pageCount = (int) Math.Ceiling((double) LevelsCnt.GetLevelCount() / itemOnPage);
         
+        currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
+        currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId, itemOnPage), SelectCurrentLevel);
+
         UpdateBackGround();
     }
     public void Start()
@@ -53,7 +52,7 @@ public class LevelPanelView : MonoBehaviour
             currentPageId++;
             Destroy(currentPage.gameObject);
             currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
-            currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId), SelectCurrentLevel);
+            currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId, itemOnPage), SelectCurrentLevel);
         }
     }
 
@@ -64,7 +63,7 @@ public class LevelPanelView : MonoBehaviour
             currentPageId--;
             Destroy(currentPage.gameObject);
             currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
-            currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId), SelectCurrentLevel);
+            currentPage.InitView(LevelsCnt.GetSessionLevelsFromPage(currentPageId, itemOnPage), SelectCurrentLevel);
         }
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SavePath: BackGrounds
   CurrentBackGroundId: 0
-  OpenedBackGroundIdList: 00000000030000000100000002000000
+  OpenedBackGroundIdList: 00000000
   list:
   - {fileID: 11400000, guid: 1651852e43518da4da4f4ff807f1bcdd, type: 2}
   - {fileID: 11400000, guid: acc8a8f64fa6b814fae370651a68a48c, type: 2}

@@ -18,10 +18,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: abd3c05b5de579546b6768a0107e4e6e, type: 2}
   - {fileID: 11400000, guid: b157e66e5d4b0164bac0a849aaf05457, type: 2}
   - {fileID: 11400000, guid: eac273906978b7143a295bea08de1f5a, type: 2}
-  - {fileID: 11400000, guid: a85a2bd6f16909c4ea1d613e1e0e1b6c, type: 2}
+  - {fileID: 11400000, guid: a46fcde16c61e4f45a700f2b39192098, type: 2}
   currentList:
-  - {fileID: 11400000, guid: abd3c05b5de579546b6768a0107e4e6e, type: 2}
   - {fileID: 11400000, guid: b157e66e5d4b0164bac0a849aaf05457, type: 2}
-  - {fileID: 11400000, guid: 7213d7f77f9ad6b47958e931e8404a87, type: 2}
-  lastGetDaily: 01.08.2022 11:15:22
-  currentSegment: 1
+  - {fileID: 11400000, guid: a46fcde16c61e4f45a700f2b39192098, type: 2}
+  - {fileID: 11400000, guid: abd3c05b5de579546b6768a0107e4e6e, type: 2}
+  lastGetDaily: 04.08.2022 17:11:57
+  currentSegment: 2

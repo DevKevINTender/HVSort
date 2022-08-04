@@ -51,6 +51,26 @@ namespace ScriptableObjects.LevelsSO
                 file.Close();
             }
         }
+        [ContextMenu("ResetData")]
+        public void ResetData()
+        {
+            Load();
+            CurrentLevelId = 0;
+            OpenedLevelIdList.Clear();
+            OpenedLevelIdList.Add(0);
+            Save();
+        }
+        [ContextMenu("OpenAll")]
+        public void OpenAll()
+        {
+            Load();
+            for (int i = 0; i < list.Count; i++)
+            {
+                if(!OpenedLevelIdList.Contains(i)) OpenedLevelIdList.Add(i);
+            }
+            Save();
+        }
+        
     }
     
     public class LevelListSave

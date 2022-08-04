@@ -5,6 +5,7 @@ using ControlersData;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Views.WinPanelView;
 
 public class SessionCore : MonoBehaviour
 {
@@ -33,11 +34,10 @@ public class SessionCore : MonoBehaviour
     public MainMenuPanelVIew MainMenuPanelVIew;
     
     public GameObject restartPanell;
-    
+    public WinPanelView winPanelView;
     void Start()
     {
         PlayerPrefs.SetInt("BackMoveCount",10);
-        PlayerPrefs.SetInt("Coins", 5000);
         DOTween.Init();
         
         DailyCnt.InitControler();
@@ -62,6 +62,7 @@ public class SessionCore : MonoBehaviour
     }
     public void SwapCompleted(BoxCom fromBox, BoxCom toBox, PartCom movePart)
     {
+        DailyCnt.AddPointToDailyItemComplete(1,1);
         backMoveCnt.AddMove(fromBox, toBox, movePart);
         CheckComposeBoxes();
     }
@@ -84,6 +85,7 @@ public class SessionCore : MonoBehaviour
     public void RestartLevel()
     {
         restartPanell.SetActive(true);
+        DailyCnt.AddPointToDailyItemComplete(2,1);
         foreach (var box in sessionSettingsCnt.boxList)
         {
             foreach (var part in box.list)
@@ -98,6 +100,7 @@ public class SessionCore : MonoBehaviour
     public void CompleteLevel()
     {
         restartPanell.SetActive(true);
+        DailyCnt.AddPointToDailyItemComplete(0,1);
         foreach (var box in sessionSettingsCnt.boxList)
         {
             foreach (var part in box.list)
@@ -107,9 +110,16 @@ public class SessionCore : MonoBehaviour
         }
         LevelsCnt.OpenLevel(LevelsCnt.GetCurrentLevelID() + 1);
         LevelsCnt.SetCurrentLevel(LevelsCnt.GetCurrentLevelID() + 1);
-        StartCoroutine(WaitForSceneLoad());
+        ProgressCnt.CheckCurrentProgress();
+        StartCoroutine(WaitForWinPanelLoad());
     }
-    
+    private IEnumerator WaitForWinPanelLoad()
+    {
+        yield return new WaitForSeconds(1);
+        winPanelView.gameObject.SetActive(true);
+        winPanelView.InitView();
+
+    }
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(1);

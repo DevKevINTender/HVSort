@@ -29,6 +29,8 @@ namespace ScriptableObjects.DailySo.ScriptsSO
                 newDailyListSave.currentList[i].currentPoints = currentList[i].currentPoints;
                 newDailyListSave.currentList[i].isCompleted = currentList[i].isCompleted;
                 newDailyListSave.currentList[i].isGetReward = currentList[i].isGetReward;
+                newDailyListSave.currentList[i].reward = currentList[i].reward;
+                newDailyListSave.currentList[i].completedPoints = currentList[i].completedPoints;
             }
 
             string saveData = JsonUtility.ToJson(newDailyListSave, true);
@@ -55,10 +57,27 @@ namespace ScriptableObjects.DailySo.ScriptsSO
                     currentList[i].currentPoints = newDailyListSave.currentList[i].currentPoints;
                     currentList[i].isCompleted =  newDailyListSave.currentList[i].isCompleted;
                     currentList[i].isGetReward = newDailyListSave.currentList[i].isGetReward;
+                    currentList[i].reward = newDailyListSave.currentList[i].reward;
+                    currentList[i].completedPoints = newDailyListSave.currentList[i].completedPoints;
                 }
                 
                 file.Close();
             }
+        }
+        [ContextMenu("ResetData")]
+        public void ResetData()
+        {
+            Load();
+            for (int i = 0; i < currentList.Count; i++)
+            {
+                list[i].currentPoints = 0;
+                list[i].isCompleted =  false;
+                list[i].isGetReward = false;
+                list[i].completedPoints = 0;
+                list[i].reward = 0;
+            }
+            currentList.Clear();
+            Save();
         }
     }
     
@@ -72,6 +91,8 @@ namespace ScriptableObjects.DailySo.ScriptsSO
     [Serializable]
     public class DailySave
     {
+        public int reward;
+        public int completedPoints;
         public int currentPoints;
         public bool isCompleted;
         public bool isGetReward;

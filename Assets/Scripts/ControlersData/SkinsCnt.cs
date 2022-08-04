@@ -6,6 +6,9 @@ namespace ControlersData
 {
     public class SkinsCnt
     {
+        public delegate void AccountHandler();
+        public static event AccountHandler SetCurrentSkinEvent;
+        
         private static SkinListScrObj SkinListSO = Resources.Load<SkinListScrObj>("ScriptableObjects/SkinsSO/SkinlListSO");
         
         public static bool SkinIsOpened(int id)
@@ -37,6 +40,7 @@ namespace ControlersData
             {
                 SkinListSO.CurrentSkinId = id;
                 SkinListSO.Save();
+                SetCurrentSkinEvent?.Invoke();
             }
         }
     

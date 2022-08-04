@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BackGroundSO 0
   m_EditorClassIdentifier: 
   id: 0
-  backGroundSession: {fileID: 21300000, guid: a89ae4292b33f584983042cd32fbea73, type: 3}
+  backGroundSession: {fileID: 21300000, guid: 34e7a63dddb508f44a6ff42c9a417d7c, type: 3}
   backGroundUI: {fileID: 21300000, guid: e8f3573c2829fa34db5011d7680a2af6, type: 3}

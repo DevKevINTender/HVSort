@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: DailySO 1
   m_EditorClassIdentifier: 
   id: 1
-  reward: 250
-  completedPoints: 3
+  reward: 255
+  defaultReward: 5
+  completedPoints: 51
   currentPoints: 0
+  maxPoints: 100
+  minPoints: 25
   isCompleted: 0
   isGetReward: 0
+  task: "\u0421\u0434\u0435\u043B\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F"

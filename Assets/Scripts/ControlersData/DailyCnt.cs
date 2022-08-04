@@ -109,6 +109,9 @@ namespace ControlersData
                     item.isGetReward = true;
                 }
             }
+            
+            DailyListSO.Save();
+            CompleteDailyEvent?.Invoke();
         }
 
         public static int GetTotalDailyReward()
@@ -137,7 +140,11 @@ namespace ControlersData
             for (int i = 0; i < 3; i++)
             {
                 int rand = Random.Range(0, randList.Count);
-                newCurrentDailyList.Add(randList[rand]);
+                DailyScrObj newDaily = randList[rand];
+                int randCoef = Random.Range(newDaily.minPoints, newDaily.maxPoints);
+                newDaily.completedPoints = randCoef;
+                newDaily.reward = newDaily.defaultReward * randCoef;
+                newCurrentDailyList.Add(newDaily);
                 randList.RemoveAt(rand);
             }
 

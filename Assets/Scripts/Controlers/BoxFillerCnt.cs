@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using ControlersData;
 using ScriptableObjects;
 using ScriptableObjects.LevelsSO;
 using Unity.VisualScripting;
@@ -91,7 +92,7 @@ public class BoxFillerCnt : MonoBehaviour
             for (int j = 0; j < 4; j++)
             {
                 PartCom newPartCom = Instantiate(partComPb);
-                newPartCom.InitComponent((PartCom.PartColor)i, i * 1 + j * 10);
+                newPartCom.InitComponent((PartColorPacksCnt.PartColor)i, i * 1 + j * 10);
                 newPartList.Add(newPartCom);
             }
         }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using ControlersData;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -66,15 +67,23 @@ public class BoxCom : MonoBehaviour, IPointerClickHandler
     {
         fullState.SetActive(false);
         partState.SetActive(true);
+        DiscoloredFull();
         isCompose = false;
     }
 
     public void ColoredFull()
     {
-        Color32 boxColor = list[0].partColorColor32[list[0].partColor];
+        Color32 boxColor = PartColorPacksCnt.GetCurrentLevelPack()[list[0].partColor];
         foreach (var item in coloredFullSprites)
         {
             item.color = boxColor;
+        }
+    }
+    public void DiscoloredFull()
+    {
+        foreach (var item in coloredFullSprites)
+        {
+            item.color = Color.white;
         }
     }
     

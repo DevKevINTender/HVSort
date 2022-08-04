@@ -10,7 +10,7 @@ using ScriptableObjects.LevelsSO;
 using UnityEditor;
 using UnityEngine;
 using JsonSerializer = Newtonsoft.Json.JsonSerializer;
-using static PartCom;
+using static ControlersData.PartColorPacksCnt;
 
 public class LevelScrObjGenerator : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class LevelScrObjGenerator : MonoBehaviour
     {
         List<PartColor> newList = new List<PartColor>();
         newList = FileParse();
-        string[] guids1 = AssetDatabase.FindAssets("LevelSO", new[] {"Assets/Resources/ScriptableObjects/LevelsSO/Items"});
+        string[] guids1 = AssetDatabase.FindAssets("LevelSO", new[] {"Assets/Resources/ScriptableObjects/LevelsSO/Items/DefaultPack"});
        
         foreach (string guid1 in guids1)
         {
@@ -43,7 +43,7 @@ public class LevelScrObjGenerator : MonoBehaviour
             }
             asset.list.Add(newColum);
         }
-        AssetDatabase.CreateAsset(asset, "Assets/Resources/ScriptableObjects/LevelsSO/Items/LevelSO" + guids1.Length + ".asset");
+        AssetDatabase.CreateAsset(asset, "Assets/Resources/ScriptableObjects/LevelsSO/Items/DefaultPack/LevelSO" + guids1.Length + ".asset");
         AssetDatabase.SaveAssets();
     }
     [ContextMenu("Parse")]

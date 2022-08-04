@@ -7,8 +7,14 @@ namespace ScriptableObjects.DailySo.ScriptsSO
     {
         public int id;
         public int reward;
+        public int defaultReward;
+        
         public int completedPoints;
         public int currentPoints;
+
+        public int maxPoints;
+        public int minPoints;
+        
         public bool isCompleted;
         public bool isGetReward;
         public string task;
