@@ -1,4 +1,6 @@
-﻿using ControlersData;
+﻿using Animation_DOTween;
+using ControlersData;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,6 +9,8 @@ namespace Views.WinPanelView
 {
     public class WinPanelView : MonoBehaviour
     {
+        [SerializeField] private WinPanelAnim winPanelAnim;
+        
         [SerializeField] private DailyPanelView dailyPanelView;
         [SerializeField] private ProgressPanelView progressPanelView;
         [SerializeField] private WinCompleteLevelPanelView winCompleteLevelPanelView;
@@ -16,6 +20,7 @@ namespace Views.WinPanelView
         
         public void InitView()
         {
+            winPanelAnim.OpenWinPanel();
             OpenNextPanelView().SetActive(true);
             UpdateBackGround();
         }
@@ -31,6 +36,8 @@ namespace Views.WinPanelView
                 currentPanel = progressPanelView.gameObject;
                 progressPanelView.InitView();
                 currentPanelText.text = "Прогресс";
+                
+                currentPanel.GetComponent<WinPanelResultAnim>().OpenResultPanel();
                 return currentPanel;
             }
             if (DailyCnt.GetTotalDailyReward() > 0)
@@ -38,8 +45,11 @@ namespace Views.WinPanelView
                 currentPanel = dailyPanelView.gameObject;
                 dailyPanelView.InitView();
                 currentPanelText.text = "Ежедневки";
+                
+                currentPanel.GetComponent<WinPanelResultAnim>().OpenResultPanel();
                 return currentPanel;
             }
+            currentPanel.GetComponent<WinPanelResultAnim>().OpenResultPanel();
             winCompleteLevelPanelView.InitView();
             currentPanelText.text = "Уровень пройден";
             return currentPanel;
@@ -65,6 +75,7 @@ namespace Views.WinPanelView
         public void CloseLevelCompletePanelView()
         {
             LevelsCnt.GetLevelReward();
+            DOTween.KillAll();
             SceneManager.LoadScene("Session");
         }
     }

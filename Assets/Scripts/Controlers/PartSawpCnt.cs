@@ -5,6 +5,7 @@ using static SessionCore;
 public class PartSawpCnt : MonoBehaviour
 {
     private PartSawpComplete partSawpComplete;
+    private bool swapMoreWhenOne;
     public void InitControler(PartSawpComplete partSawpComplete)
     {
         this.partSawpComplete = partSawpComplete;
@@ -17,7 +18,20 @@ public class PartSawpCnt : MonoBehaviour
             fromBox.RemoveOldPart(swapPart);
             toBox.AddNewPart(swapPart);
             partSawpComplete?.Invoke(fromBox, toBox, swapPart);
+            swapMoreWhenOne = true;
             PartSwap(fromBox,toBox);
+        }
+        else
+        {
+            if (swapMoreWhenOne)
+            {
+                swapMoreWhenOne = false;
+            }
+            else
+            {
+                toBox.boxAnim.SwapMistacke();
+            }
+            
         }
         return true;
     }

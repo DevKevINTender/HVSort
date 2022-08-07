@@ -233,6 +233,8 @@ GameObject:
   - component: {fileID: 63337735550033129}
   - component: {fileID: 63337735550033130}
   - component: {fileID: 63337735550033131}
+  - component: {fileID: 2592826931810965325}
+  - component: {fileID: 5515957308178319925}
   m_Layer: 5
   m_Name: BuyRandomBackGround
   m_TagString: Untagged
@@ -354,6 +356,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2592826931810965325}
+        m_TargetAssemblyTypeName: ButtonAnim, Assembly-CSharp
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2592826931810965325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735550033133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2ec982d8f369f40b35b38738e6e72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5515957308178319925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735550033133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b0646c19d42e287dacdc3e01457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.25
+  interval: 1.5
 --- !u!1 &63337736277828449
 GameObject:
   m_ObjectHideFlags: 0

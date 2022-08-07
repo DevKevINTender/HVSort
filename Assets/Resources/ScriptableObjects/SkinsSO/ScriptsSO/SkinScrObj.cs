@@ -6,9 +6,6 @@ namespace ScriptableObjects.SkinsSO
     public class SkinScrObj : ScriptableObject
     {
         public int id;
-        public GameObject skinSession;
-        public GameObject skinUI;
-
-        public GameObject skinHeadPart;
+        public Sprite skinHeadSprite;
     }
 }

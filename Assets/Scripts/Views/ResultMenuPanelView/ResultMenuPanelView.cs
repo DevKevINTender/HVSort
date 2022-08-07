@@ -62,8 +62,8 @@ public class ResultMenuPanelView : MonoBehaviour
         Destroy(currentPanelObj);
         progressPanelView = Instantiate(progressPanelViewPb, progressPanelViewPos);
         progressPanelView.InitView();
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        progressPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        progressPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelObj = progressPanelView.gameObject;
         currentPanelButton = progressPanelButton;
         currentPanel.text = "Прогресс";
@@ -74,8 +74,8 @@ public class ResultMenuPanelView : MonoBehaviour
         Destroy(currentPanelObj);
         dailyPanelView = Instantiate(dailyPanelViewPb, dailyPanelViewPos);
         dailyPanelView.InitView();
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        dailyPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        dailyPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelObj = dailyPanelView.gameObject;
         currentPanelButton = dailyPanelButton;
         currentPanel.text = "Ежедневки";

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Animation_DOTween.DailyPanel;
 using ControlersData;
 using ScriptableObjects.DailySo.ScriptsSO;
 using UnityEngine;
@@ -30,10 +31,17 @@ namespace Views.Result.DailyPanelView
             {
                 if (list[i].isCompleted)
                 {
-                    dailyStatusIamge[i].color = Color.green;
+                    
                     if (list[i].isGetReward)
                     {
                         dailyStatusIamge[i].color = Color.grey;
+                        dailyStatusIamge[i].GetComponent<DailyInfoItemAnim>().StopAnim();
+                    }
+                    else
+                    {
+                        dailyStatusIamge[i].GetComponent<DailyInfoItemAnim>().PulseAndJump();
+                        
+                        dailyStatusIamge[i].color = Color.green;
                     }
                 }
                 else
@@ -42,5 +50,6 @@ namespace Views.Result.DailyPanelView
                 }
             }
         }
+        
     }
 }

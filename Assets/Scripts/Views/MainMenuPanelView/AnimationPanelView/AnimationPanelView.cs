@@ -25,18 +25,10 @@ public class AnimationPanelView : MonoBehaviour
         if (AnimationCnt.GetListOfClosesAnimations().Count == 0)
         {
             buyRandomAnimationBtn.SetActive(false);
+            getCoinsByAds.SetActive(false);
             allBought.SetActive(true);
         }
 
-        if (CoinsCnt.GetCoinsCount() < AnimationCost)
-        {
-            getCoinsByAds.SetActive(true);
-        }
-        else
-        {
-            getCoinsByAds.SetActive(false);
-        }
-        
         foreach (var item in skinListScrObj.list)
         {
             AnimationItemView newItem = Instantiate(animationItemViewPB,animationItemViewSpawnPos);

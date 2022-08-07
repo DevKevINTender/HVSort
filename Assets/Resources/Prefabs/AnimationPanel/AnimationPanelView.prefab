@@ -99,7 +99,7 @@ MonoBehaviour:
   animationCostText: {fileID: 63337736277828511}
   buyRandomAnimationBtn: {fileID: 63337735550033133}
   getCoinsByAds: {fileID: 63337735475176522}
-  allBought: {fileID: 0}
+  allBought: {fileID: 3031557829128349572}
 --- !u!1 &63337735475176522
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,13 +112,15 @@ GameObject:
   - component: {fileID: 63337735475176518}
   - component: {fileID: 63337735475176519}
   - component: {fileID: 63337735475176520}
+  - component: {fileID: 8485260983143523221}
+  - component: {fileID: 2209981642279535387}
   m_Layer: 5
   m_Name: GetCoinsByAds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &63337735475176521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -220,7 +222,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 63337735475176519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2209981642279535387}
+        m_TargetAssemblyTypeName: ButtonAnim, Assembly-CSharp
+        m_MethodName: Push
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8485260983143523221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735475176522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b0646c19d42e287dacdc3e01457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.5
+  interval: 0
+--- !u!114 &2209981642279535387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735475176522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2ec982d8f369f40b35b38738e6e72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &63337735550033133
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +273,8 @@ GameObject:
   - component: {fileID: 63337735550033129}
   - component: {fileID: 63337735550033130}
   - component: {fileID: 63337735550033131}
+  - component: {fileID: 2309946715245748745}
+  - component: {fileID: 4717923746504731342}
   m_Layer: 5
   m_Name: BuyRandomAnimation
   m_TagString: Untagged
@@ -354,6 +396,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2309946715245748745}
+        m_TargetAssemblyTypeName: ButtonAnim, Assembly-CSharp
+        m_MethodName: Push
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2309946715245748745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735550033133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2ec982d8f369f40b35b38738e6e72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4717923746504731342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63337735550033133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b0646c19d42e287dacdc3e01457b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.25
+  interval: 1.5
 --- !u!1 &63337736277828449
 GameObject:
   m_ObjectHideFlags: 0

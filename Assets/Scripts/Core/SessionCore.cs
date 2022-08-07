@@ -123,6 +123,7 @@ public class SessionCore : MonoBehaviour
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(1);
+        DOTween.KillAll();
         SceneManager.LoadScene("Session");
 
     }

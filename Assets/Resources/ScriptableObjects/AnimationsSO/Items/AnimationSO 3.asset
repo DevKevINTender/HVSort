@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf67fcc63e084e0cb8e3782123230b26, type: 3}
   m_Name: AnimationSO 3
   m_EditorClassIdentifier: 
-  id: 0
-  AnimationItem: {fileID: 0}
+  id: 3
+  AnimationItem: {fileID: 7400000, guid: 898587ca4db74054490493be4554782b, type: 2}

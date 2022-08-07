@@ -5,24 +5,29 @@ using UnityEngine;
 
 public class FullCom : MonoBehaviour
 {
-    public void SetSkih()
+    [SerializeField] private Animation hvAnimation;
+    [SerializeField] private SpriteRenderer hvHeadSprite;
+    public void SetSkin()
     {
-        
+        hvHeadSprite.sprite = SkinsCnt.GetCurrentSkin().skinHeadSprite;
     }
 
     public void SetAnimation()
     {
-        
+        hvAnimation.clip = AnimationCnt.GetCurrentAnimation().AnimationItem;
+        hvAnimation.Play(hvAnimation.clip.name);
     }
     
-    public void Start()
+    public void Awake()
     {
-        SkinsCnt.SetCurrentSkinEvent += SetSkih;
+        SkinsCnt.SetCurrentSkinEvent += SetSkin;
         AnimationCnt.SetCurrentAnimationEvent += SetAnimation;
     }
 
     public void OnDestroy()
     {
-        SkinsCnt.SetCurrentSkinEvent -= SetSkih;
-        AnimationCnt.SetCurrentAnimationEvent -= SetAnimation;    }
+        SkinsCnt.SetCurrentSkinEvent -= SetSkin;
+        AnimationCnt.SetCurrentAnimationEvent -= SetAnimation;
+        
+    }
 }

@@ -67,9 +67,19 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Animation DOTween" t="Include">
-            <e p="BoxAnim.cs" t="Include" />
-            <e p="ButtonSizeAnim.cs" t="Include" />
-            <e p="PartAnim.cs" t="Include" />
+            <e p="DailyPanel" t="Include">
+              <e p="DailyInfoItemAnim.cs" t="Include" />
+            </e>
+            <e p="Global" t="Include">
+              <e p="ButtonAnim.cs" t="Include" />
+              <e p="PulsAnim.cs" t="Include" />
+            </e>
+            <e p="Session" t="Include">
+              <e p="BoxAnim.cs" t="Include" />
+              <e p="PartAnim.cs" t="Include" />
+            </e>
+            <e p="WinPanelAnim.cs" t="Include" />
+            <e p="WinPanelResultAnim.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
             <e p="BoxCom.cs" t="Include" />

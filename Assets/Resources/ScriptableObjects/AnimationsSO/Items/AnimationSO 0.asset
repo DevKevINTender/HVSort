@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AnimationSO 0
   m_EditorClassIdentifier: 
   id: 0
-  AnimationItem: {fileID: 0}
+  AnimationItem: {fileID: 7400000, guid: 0d7739c02a85c5b468a9e67e1f27e904, type: 2}

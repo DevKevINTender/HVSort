@@ -68,8 +68,8 @@ public class MainMenuPanelVIew : MonoBehaviour
         Destroy(currentPanelObj);
         skinPanelView = Instantiate(skinPanelViewPb, skinPanelViewPos);
         skinPanelView.InitView();
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        skinPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        skinPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelObj = skinPanelView.gameObject;
         currentPanelButton = skinPanelButton;
         currentPanel.text = "Скины";
@@ -80,8 +80,8 @@ public class MainMenuPanelVIew : MonoBehaviour
         Destroy(currentPanelObj);
         backGroundPanelView = Instantiate(backGroundPanelViewPb, backGroundPanelViewPos);
         backGroundPanelView.InitView();
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        backGroundPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        backGroundPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelObj = backGroundPanelView.gameObject;
         currentPanelButton = backGroundPanelButton;
         currentPanel.text = "Фоны";
@@ -92,8 +92,8 @@ public class MainMenuPanelVIew : MonoBehaviour
         Destroy(currentPanelObj);
         animationPanelView = Instantiate(animationPanelViewPb, animationPanelViewPos);
         animationPanelView.InitView();
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        animationPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        animationPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelObj = animationPanelView.gameObject;
         currentPanelButton = animationPanelButton;
         currentPanel.text = "Анимации";
@@ -102,8 +102,8 @@ public class MainMenuPanelVIew : MonoBehaviour
     public void ShowSettingsPanel()
     {
         Destroy(currentPanelObj);
-        if(currentPanelButton) currentPanelButton.GetComponent<ButtonSizeAnim>().Decrease();
-        settingsPanelButton.GetComponent<ButtonSizeAnim>().Increase();
+        if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
+        settingsPanelButton.GetComponent<ButtonAnim>().Increase();
         currentPanelButton = settingsPanelButton;
         currentPanel.text = "Настройки";
         

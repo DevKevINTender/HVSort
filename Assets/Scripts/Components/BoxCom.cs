@@ -9,7 +9,8 @@ using static SessionCore;
 
 public class BoxCom : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] private BoxAnim boxAnim;
+    [SerializeField] public BoxAnim boxAnim;
+    [SerializeField] public FullCom fullComAnim;
     [SerializeField] private GameObject fullState;
     [SerializeField] private GameObject partState;
     [SerializeField] private List<SpriteRenderer> coloredFullSprites = new List<SpriteRenderer>();
@@ -60,6 +61,8 @@ public class BoxCom : MonoBehaviour, IPointerClickHandler
         fullState.SetActive(true);
         partState.SetActive(false);
         ColoredFull();
+        fullComAnim.SetSkin();
+        fullComAnim.SetAnimation();
         isCompose = true;
     }
 

@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: SkinSO 2
   m_EditorClassIdentifier: 
   id: 0
-  skinSession: {fileID: 4175470072723304127, guid: d504ae851cdd1c440aa16cc4e0828985, type: 3}
-  skinUI: {fileID: 5598142623262915143, guid: 3472cf11711a69d4ea1c6d228fa4e726, type: 3}
-  skinHeadPart: {fileID: 7951657571757876161, guid: 68676beaaec30264b9f391a523ba87a6, type: 3}
+  skinHeadSprite: {fileID: 21300000, guid: 885e87e4c49b9a44a8221613f44a13b2, type: 3}

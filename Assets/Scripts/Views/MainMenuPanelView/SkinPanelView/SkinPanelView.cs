@@ -26,18 +26,10 @@ public class SkinPanelView : MonoBehaviour
         if (SkinsCnt.GetListOfClosesSkins().Count == 0)
         {
             buyRandomSkinBtn.SetActive(false);
+            getCoinsByAds.SetActive(false);
             allBought.SetActive(true);
         }
 
-        if (CoinsCnt.GetCoinsCount() < SkinCost)
-        {
-            getCoinsByAds.SetActive(true);
-        }
-        else
-        {
-            getCoinsByAds.SetActive(false);
-        }
-        
         foreach (var item in skinListScrObj.list)
         {
             SkinItemView newItem = Instantiate(skinItemViewPB,skinItemViewSpawnPos);

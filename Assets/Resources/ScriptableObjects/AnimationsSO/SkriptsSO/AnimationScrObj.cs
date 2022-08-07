@@ -6,6 +6,6 @@ namespace ScriptableObjects.AnimationsSO.SkriptsSO
     public class AnimationScrObj : ScriptableObject
     {
         public int id;
-        public Animation AnimationItem;
+        public AnimationClip AnimationItem;
     }
 }
