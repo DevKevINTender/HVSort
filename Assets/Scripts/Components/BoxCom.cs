@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Controlers;
 using ControlersData;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class BoxCom : MonoBehaviour, IPointerClickHandler
     public int boxRow;
     
     private bool isCompose = false;
+    private bool lastComposeStatus;
     private BoxDel boxChoosed;
    
     public void InitComponent(BoxDel boxChoosed , int boxId, int boxRow)
@@ -58,20 +60,28 @@ public class BoxCom : MonoBehaviour, IPointerClickHandler
     }
     public void ComposeBox()
     {
-        fullState.SetActive(true);
-        partState.SetActive(false);
-        ColoredFull();
-        fullComAnim.SetSkin();
-        fullComAnim.SetAnimation();
-        isCompose = true;
+        if (!lastComposeStatus)
+        {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(5);
+            fullState.SetActive(true);
+            partState.SetActive(false);
+            ColoredFull();
+            fullComAnim.SetSkin();
+            fullComAnim.SetAnimation();
+            lastComposeStatus = true;
+        }
     }
 
     public void DeComposeBox()
     {
-        fullState.SetActive(false);
-        partState.SetActive(true);
-        DiscoloredFull();
-        isCompose = false;
+        if (lastComposeStatus)
+        {
+            fullState.SetActive(false);
+            partState.SetActive(true);
+            DiscoloredFull();
+            lastComposeStatus = false;
+        }
     }
 
     public void ColoredFull()
@@ -119,9 +129,8 @@ public class BoxCom : MonoBehaviour, IPointerClickHandler
 
     public void RemoveOldPart(PartCom partCom)
     {
-       int index = 0;
-       list.Remove(partCom);
-       partCom.transform.parent = null;
+        list.Remove(partCom); 
+        partCom.transform.parent = null;
     }
 
     public void BoxChoosen()

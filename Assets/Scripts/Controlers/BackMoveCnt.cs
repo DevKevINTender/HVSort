@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Controlers;
 using ControlersData;
 using UnityEngine;
 using Views;
@@ -61,7 +62,12 @@ public class BackMoveCnt : MonoBehaviour
     {
         if (moveList.Count > 0 && SubtractFromBackMoveCount())
         {
+            
             DailyCnt.AddPointToDailyItemComplete(3,1);
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(2);
+            audioCnt.CreateNewAudioElement(8);
+            
             Move lastMove = moveList.Last();
             lastMove.toBox.RemoveOldPart(lastMove.movedPart);
             lastMove.fromBox.AddNewPart(lastMove.movedPart);

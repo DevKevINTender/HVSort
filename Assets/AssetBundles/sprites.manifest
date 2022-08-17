@@ -1,0 +1,99 @@
+ManifestFileVersion: 0
+CRC: 1161390533
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c0c185b30654dbcaf8fd4e4b22464d10
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4df8c69f2c8a6ad9e3cbf82bb83e4dc3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 47.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 31.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 76.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 57.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 59.png"
+- "Assets/Resources/Sprites/ResultMenu/Daily/\u0420\u0435\u0441\u0443\u0440\u0441
+  2.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  37.png"
+- "Assets/Resources/Sprites/ResultMenu/\u0420\u0435\u0441\u0443\u0440\u0441 5.png"
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 68.png"
+- "Assets/Resources/Sprites/ResultMenu/Daily/\u0420\u0435\u0441\u0443\u0440\u0441
+  4.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  32.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 56.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 20.png"
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 117.png"
+- "Assets/Resources/Sprites/MainMenu/BackGroundPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  121.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 24.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 105.png"
+- "Assets/Resources/Sprites/Global/\u0420\u0435\u0441\u0443\u0440\u0441 133.png"
+- "Assets/Resources/Sprites/ResultMenu/\u0420\u0435\u0441\u0443\u0440\u0441 6.png"
+- Assets/Resources/Sprites/Global/BackGrounds/Global/2.png
+- "Assets/Resources/Sprites/ResultMenu/Daily/\u0420\u0435\u0441\u0443\u0440\u0441
+  3.png"
+- Assets/Resources/Sprites/Global/BackGrounds/UI/1.png
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 55.png"
+- "Assets/Resources/Sprites/ResultMenu/Daily/\u0420\u0435\u0441\u0443\u0440\u0441
+  1.png"
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 108.png"
+- "Assets/Resources/Sprites/ResultMenu/Progress/\u0420\u0435\u0441\u0443\u0440\u0441
+  15.png"
+- "Assets/Resources/Sprites/ResultMenu/Progress/\u0420\u0435\u0441\u0443\u0440\u0441
+  17.png"
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 109.png"
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 65.png"
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 110.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  35.png"
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 25.png"
+- Assets/Resources/Sprites/Global/BackGrounds/UI/4.png
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 67.png"
+- Assets/Resources/Sprites/Global/BackGrounds/UI/3.png
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 63.png"
+- Assets/Resources/Sprites/Global/BackGrounds/Global/4.png
+- "Assets/Resources/Sprites/MainMenu/BackGroundPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  123.png"
+- "Assets/Resources/Sprites/ResultMenu/Progress/\u0420\u0435\u0441\u0443\u0440\u0441
+  16.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 18.png"
+- "Assets/Resources/Sprites/ResultMenu/Daily/\u0420\u0435\u0441\u0443\u0440\u0441
+  21.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  33.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  38.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 53.png"
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 66.png"
+- Assets/Resources/Sprites/Global/BackGrounds/Global/3.png
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 46.png"
+- Assets/Resources/Sprites/Global/BackGrounds/Global/1.png
+- Assets/Resources/Sprites/Global/back.png
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 22.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 36.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 54.png"
+- "Assets/Resources/Sprites/WinPanel/\u0420\u0435\u0441\u0443\u0440\u0441 58.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 51.png"
+- "Assets/Resources/Sprites/ResultMenu/Progress/\u0420\u0435\u0441\u0443\u0440\u0441
+  14.png"
+- "Assets/Resources/Sprites/MainMenu/BackGroundPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  122.png"
+- Assets/Resources/Sprites/Global/BackGrounds/UI/2.png
+- "Assets/Resources/Sprites/MainMenu/\u0420\u0435\u0441\u0443\u0440\u0441 107.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 70.png"
+- "Assets/Resources/Sprites/MainMenu/SkinPanel/\u0420\u0435\u0441\u0443\u0440\u0441
+  34.png"
+- "Assets/Resources/Sprites/Session/\u0420\u0435\u0441\u0443\u0440\u0441 23.png"
+- "Assets/Resources/Sprites/Global/\u0420\u0435\u0441\u0443\u0440\u0441 69.png"
+- "Assets/Resources/Sprites/LevelsList/\u0420\u0435\u0441\u0443\u0440\u0441 64.png"
+Dependencies: []

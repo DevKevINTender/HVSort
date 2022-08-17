@@ -11,7 +11,6 @@ public class SkinPanelView : MonoBehaviour
     [SerializeField] private SkinItemView skinItemViewPB;
     [SerializeField] private Transform skinItemViewSpawnPos;
     [SerializeField] private List<SkinItemView> list = new List<SkinItemView>();
-    [SerializeField] private int SkinCost;
     [SerializeField] private Text skiinCostText;
     [SerializeField] private GameObject buyRandomSkinBtn;
     [SerializeField] private GameObject getCoinsByAds;
@@ -21,7 +20,7 @@ public class SkinPanelView : MonoBehaviour
     public void InitView()
     {
         SkinListScrObj skinListScrObj = SkinsCnt.GetList();
-        skiinCostText.text = "" + SkinCost;
+        skiinCostText.text = "" + SkinsCnt.GetSkinCost();
         
         if (SkinsCnt.GetListOfClosesSkins().Count == 0)
         {
@@ -60,10 +59,10 @@ public class SkinPanelView : MonoBehaviour
     
     public void BuyRandomSkin()
     {
-        if (CoinsCnt.EnothCoins(SkinCost))
+        if (CoinsCnt.EnothCoins(SkinsCnt.GetSkinCost()))
         {
             List<SkinScrObj> skinListScrObj = SkinsCnt.GetListOfClosesSkins();
-            CoinsCnt.SubtractCoins(SkinCost);
+            CoinsCnt.SubtractCoins(SkinsCnt.GetSkinCost());
             SkinScrObj randSkin = skinListScrObj[Random.Range(0, skinListScrObj.Count)];
             SkinsCnt.OpenSkin(randSkin.id);
             UpdateView();

@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3147428045
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ff25f43da6b3c56341471070a28cbf64
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c12678a98877549a3fe7bb52917258ad
+HashAppended: 0
+ClassTypes:
+- Class: 329
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/videos/Comp 1_7.mp4
+Dependencies: []

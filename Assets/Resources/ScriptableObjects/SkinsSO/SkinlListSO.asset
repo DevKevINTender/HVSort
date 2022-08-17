@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SkinlListSO
   m_EditorClassIdentifier: 
   SavePath: Skins
+  SkinCost: 5000
   CurrentSkinId: 0
   OpenedSkinIdList: 00000000
   list:

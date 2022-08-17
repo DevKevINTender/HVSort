@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AnimationListSO
   m_EditorClassIdentifier: 
   SavePath: Animations
+  AnimationCost: 10000
   CurrentAnimationId: 0
   OpenedAnimationIdList: 00000000
   list:

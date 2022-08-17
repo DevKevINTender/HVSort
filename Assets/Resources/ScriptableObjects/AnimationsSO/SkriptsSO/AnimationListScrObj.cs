@@ -10,6 +10,7 @@ namespace ScriptableObjects.AnimationsSO.SkriptsSO
     public class AnimationListScrObj : ScriptableObject
     {
         public string SavePath;
+        public int AnimationCost;
         //Save
         public int CurrentAnimationId;
         public List<int> OpenedAnimationIdList = new List<int>();

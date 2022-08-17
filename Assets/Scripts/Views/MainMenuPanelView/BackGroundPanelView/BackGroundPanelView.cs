@@ -11,7 +11,6 @@ namespace Views
         [SerializeField] private BackGroundItemView backGroundItemViewPB;
         [SerializeField] private Transform backGroundItemViewSpawnPos;
         [SerializeField] private List<BackGroundItemView> list = new List<BackGroundItemView>();
-        [SerializeField] private int backGroundCost;
         [SerializeField] private Text backGroundCostText;
         [SerializeField] private GameObject buyRandomBackGroundBtn;
         [SerializeField] private GameObject getCoinsByAds;
@@ -21,7 +20,7 @@ namespace Views
         public void InitView()
         {
             BackGroundListScrObj backGroundListScrObj = BackGroundCnt.GetList();
-            backGroundCostText.text = "" + backGroundCost;
+            backGroundCostText.text = "" + BackGroundCnt.GetBackGroundCost();
             
             if (BackGroundCnt.GetListOfClosesBackGrounds().Count == 0)
             {
@@ -29,7 +28,7 @@ namespace Views
                 allBought.SetActive(true);
             }
 
-            if (CoinsCnt.GetCoinsCount() < backGroundCost)
+            if (CoinsCnt.GetCoinsCount() < BackGroundCnt.GetBackGroundCost())
             {
                 getCoinsByAds.SetActive(true);
             }
@@ -68,10 +67,10 @@ namespace Views
         
         public void BuyRandomBackGround()
         {
-            if (CoinsCnt.EnothCoins(backGroundCost))
+            if (CoinsCnt.EnothCoins(BackGroundCnt.GetBackGroundCost()))
             {
                 List<BackGroundScrObj> backGroundListScrObj = BackGroundCnt.GetListOfClosesBackGrounds();
-                CoinsCnt.SubtractCoins(backGroundCost);
+                CoinsCnt.SubtractCoins(BackGroundCnt.GetBackGroundCost());
                 BackGroundScrObj randBackGround = backGroundListScrObj[Random.Range(0, backGroundListScrObj.Count)];
                 BackGroundCnt.OpenBackGround(randBackGround.id);
                 UpdateView();

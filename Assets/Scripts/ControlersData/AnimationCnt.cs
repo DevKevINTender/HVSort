@@ -71,5 +71,11 @@ namespace ControlersData
 
             return closedAnimation;
         }
+        
+        public static int GetAnimationCost()
+        {
+            AnimationListSO.Load();
+            return AnimationListSO.AnimationCost;
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace ScriptableObjects.BackGroundSO.SkriptsSO
     public class BackGroundListScrObj : ScriptableObject
     {
         public string SavePath;
+        public int BackGroundCost;
         //Save
         public int CurrentBackGroundId;
         public List<int> OpenedBackGroundIdList = new List<int>();

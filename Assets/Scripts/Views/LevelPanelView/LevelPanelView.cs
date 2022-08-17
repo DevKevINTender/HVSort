@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,6 +50,8 @@ public class LevelPanelView : MonoBehaviour
     {
         if (currentPageId < pageCount - 1)
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(8);
             currentPageId++;
             Destroy(currentPage.gameObject);
             currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
@@ -60,6 +63,8 @@ public class LevelPanelView : MonoBehaviour
     {
         if (currentPageId > 0)
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(8);
             currentPageId--;
             Destroy(currentPage.gameObject);
             currentPage = Instantiate(levelPageViewPb,levelPageSpawnPos);
@@ -71,6 +76,8 @@ public class LevelPanelView : MonoBehaviour
     {
         if (LevelsCnt.LevelIsOpened(id))
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(8);
             LevelsCnt.SetCurrentLevel(id);
             currentPage.UpdateView();
             selectLevelDel?.Invoke();

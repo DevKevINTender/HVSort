@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Animation_DOTween.DailyPanel;
+using Controlers;
 using ControlersData;
 using ScriptableObjects.DailySo.ScriptsSO;
 using UnityEngine;
@@ -31,7 +32,8 @@ namespace Views.Result.DailyPanelView
             {
                 if (list[i].isCompleted)
                 {
-                    
+                    AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+                    audioCnt.CreateNewAudioElement(11);
                     if (list[i].isGetReward)
                     {
                         dailyStatusIamge[i].color = Color.grey;

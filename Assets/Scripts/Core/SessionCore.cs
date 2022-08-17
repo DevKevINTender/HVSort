@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using ControlersData;
 using DG.Tweening;
 using UnityEngine;
@@ -93,7 +94,9 @@ public class SessionCore : MonoBehaviour
                 part.RestartLevel(box);
             }
         }
-
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(7);
+        audioCnt.CreateNewAudioElement(8);
         StartCoroutine(WaitForSceneLoad());
     }
     
@@ -101,6 +104,8 @@ public class SessionCore : MonoBehaviour
     {
         restartPanell.SetActive(true);
         DailyCnt.AddPointToDailyItemComplete(0,1);
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(6);
         foreach (var box in sessionSettingsCnt.boxList)
         {
             foreach (var part in box.list)
@@ -130,30 +135,23 @@ public class SessionCore : MonoBehaviour
 
     public void OpenLevelList()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         LevelPanelView.gameObject.SetActive(true);
         LevelPanelView.InitView(SelectLevel);
     }
     public void CloseLevelList()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         LevelPanelView.gameObject.SetActive(false);
     }
     public void SelectLevel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         CloseLevelList();
         RestartLevel();
     }
 
-    public void SelectSkin()
-    {
-        
-    }
-
-    public void SelectBackGround()
-    {
-        
-    }
-    
-    public  void SelectAnimation()
-    {}
-    
 }

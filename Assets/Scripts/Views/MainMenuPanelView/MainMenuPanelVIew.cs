@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
@@ -65,6 +66,8 @@ public class MainMenuPanelVIew : MonoBehaviour
     
     public void ShowSkinPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         skinPanelView = Instantiate(skinPanelViewPb, skinPanelViewPos);
         skinPanelView.InitView();
@@ -77,6 +80,8 @@ public class MainMenuPanelVIew : MonoBehaviour
 
     public void ShowBackGroundPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         backGroundPanelView = Instantiate(backGroundPanelViewPb, backGroundPanelViewPos);
         backGroundPanelView.InitView();
@@ -89,6 +94,8 @@ public class MainMenuPanelVIew : MonoBehaviour
     
     public void ShowAnimationPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         animationPanelView = Instantiate(animationPanelViewPb, animationPanelViewPos);
         animationPanelView.InitView();
@@ -101,6 +108,8 @@ public class MainMenuPanelVIew : MonoBehaviour
 
     public void ShowSettingsPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         if(currentPanelButton) currentPanelButton.GetComponent<ButtonAnim>().Decrease();
         settingsPanelButton.GetComponent<ButtonAnim>().Increase();
@@ -111,6 +120,8 @@ public class MainMenuPanelVIew : MonoBehaviour
     
     public void CloseMainMenuPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         gameObject.SetActive(false);
     }

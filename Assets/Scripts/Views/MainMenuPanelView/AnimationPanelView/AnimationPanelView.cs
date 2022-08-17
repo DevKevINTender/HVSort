@@ -10,7 +10,6 @@ public class AnimationPanelView : MonoBehaviour
     [SerializeField] private AnimationItemView animationItemViewPB;
     [SerializeField] private Transform animationItemViewSpawnPos;
     [SerializeField] private List<AnimationItemView> list = new List<AnimationItemView>();
-    [SerializeField] private int AnimationCost;
     [SerializeField] private Text animationCostText;
     [SerializeField] private GameObject buyRandomAnimationBtn;
     [SerializeField] private GameObject getCoinsByAds;
@@ -20,7 +19,7 @@ public class AnimationPanelView : MonoBehaviour
     public void InitView()
     {
         AnimationListScrObj skinListScrObj = AnimationCnt.GetList();
-        animationCostText.text = "" + AnimationCost;
+        animationCostText.text = "" + AnimationCnt.GetAnimationCost();
         
         if (AnimationCnt.GetListOfClosesAnimations().Count == 0)
         {
@@ -59,10 +58,10 @@ public class AnimationPanelView : MonoBehaviour
     
     public void BuyRandomAnimation()
     {
-        if (CoinsCnt.EnothCoins(AnimationCost))
+        if (CoinsCnt.EnothCoins(AnimationCnt.GetAnimationCost()))
         {
             List<AnimationScrObj> animationListScrObj = AnimationCnt.GetListOfClosesAnimations();
-            CoinsCnt.SubtractCoins(AnimationCost);
+            CoinsCnt.SubtractCoins(AnimationCnt.GetAnimationCost());
             AnimationScrObj randAnimation= animationListScrObj[Random.Range(0, animationListScrObj.Count)];
             AnimationCnt.OpenAnimation(randAnimation.id);
             UpdateView();

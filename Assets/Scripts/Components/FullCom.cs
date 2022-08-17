@@ -7,6 +7,13 @@ public class FullCom : MonoBehaviour
 {
     [SerializeField] private Animation hvAnimation;
     [SerializeField] private SpriteRenderer hvHeadSprite;
+
+    public void Start()
+    {
+        SetSkin();
+        SetAnimation();
+    }
+    
     public void SetSkin()
     {
         hvHeadSprite.sprite = SkinsCnt.GetCurrentSkin().skinHeadSprite;

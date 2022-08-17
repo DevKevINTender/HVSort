@@ -71,5 +71,11 @@ namespace ControlersData
 
             return closesSkins;
         }
+
+        public static int GetSkinCost()
+        {
+            SkinListSO.Load();
+            return SkinListSO.SkinCost;
+        }
     }
 }

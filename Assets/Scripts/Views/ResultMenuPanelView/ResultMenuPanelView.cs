@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,6 +60,8 @@ public class ResultMenuPanelView : MonoBehaviour
     
     public void ShowProgressPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         progressPanelView = Instantiate(progressPanelViewPb, progressPanelViewPos);
         progressPanelView.InitView();
@@ -71,6 +74,8 @@ public class ResultMenuPanelView : MonoBehaviour
 
     public void ShowDailyPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         dailyPanelView = Instantiate(dailyPanelViewPb, dailyPanelViewPos);
         dailyPanelView.InitView();
@@ -83,6 +88,8 @@ public class ResultMenuPanelView : MonoBehaviour
 
     public void CloseResultMenuPanel()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         Destroy(currentPanelObj);
         gameObject.SetActive(false);
     }

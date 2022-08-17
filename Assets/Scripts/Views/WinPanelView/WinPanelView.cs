@@ -1,4 +1,6 @@
-﻿using Animation_DOTween;
+﻿using System.Collections;
+using Animation_DOTween;
+using Controlers;
 using ControlersData;
 using DG.Tweening;
 using UnityEngine;
@@ -57,6 +59,8 @@ namespace Views.WinPanelView
         
         public void CloseDailyPanelView()
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(10);
             DailyCnt.GetDailyReward();
             currentPanel.SetActive(false);
             OpenNextPanelView().SetActive(true);
@@ -64,6 +68,8 @@ namespace Views.WinPanelView
 
         public void CloseProgressPanelView()
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(10);
             if (ProgressCnt.GetCurrentProgress() != null)
             {
                 ProgressCnt.GetProgressReward(ProgressCnt.GetCurrentProgress().id);
@@ -74,9 +80,19 @@ namespace Views.WinPanelView
 
         public void CloseLevelCompletePanelView()
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(9);
             LevelsCnt.GetLevelReward();
             DOTween.KillAll();
+            StartCoroutine(WaitForSceneLoad(audioCnt.audioList[9].audio.length));
+        }
+        
+        private IEnumerator WaitForSceneLoad(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            DOTween.KillAll();
             SceneManager.LoadScene("Session");
+
         }
     }
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BackGroundListSO
   m_EditorClassIdentifier: 
   SavePath: BackGrounds
+  BackGroundCost: 2500
   CurrentBackGroundId: 0
   OpenedBackGroundIdList: 00000000
   list:

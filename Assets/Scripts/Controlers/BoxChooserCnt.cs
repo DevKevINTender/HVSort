@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using UnityEngine;
 using static SessionCore;
 
@@ -19,10 +20,10 @@ public class BoxChooserCnt : MonoBehaviour
     
     public void ChooseBox(BoxCom newBox)
     {
-        BoxCom fromBox = null;
-        BoxCom toBox = null;
         if (currentBox == null)
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(3);
             currentBox = newBox;
             newBox.BoxChoosen();
         }

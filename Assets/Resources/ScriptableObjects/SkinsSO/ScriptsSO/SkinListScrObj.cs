@@ -9,6 +9,7 @@ namespace ScriptableObjects.SkinsSO
     public class SkinListScrObj : ScriptableObject
     {
         public string SavePath;
+        public int SkinCost;
         //Save
         public int CurrentSkinId;
         public List<int> OpenedSkinIdList = new List<int>();

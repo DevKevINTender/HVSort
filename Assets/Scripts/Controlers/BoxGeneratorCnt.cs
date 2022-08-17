@@ -1,6 +1,7 @@
     using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+    using Controlers;
     using ControlersData;
     using UnityEngine;
 using static SessionCore;
@@ -96,6 +97,9 @@ public class BoxGeneratorCnt : MonoBehaviour
     {
         if (extraBoxList.Count > 0)
         {
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(0);
+            audioCnt.CreateNewAudioElement(8);
             DailyCnt.AddPointToDailyItemComplete(4,1);
             BoxCom showBox = extraBoxList[0];
             extraBoxList.Remove(showBox);

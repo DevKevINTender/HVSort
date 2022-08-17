@@ -20,80 +20,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be61885-8b25-4f10-b1a0-5c36a4824387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/DailyPanel.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/DailyPanel/DailyInfoItemAnim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/DailyPanel/DailyInfoItemAnim.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/ButtonAnim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/PulsAnim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/PulsAnim.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Session.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/WinPanelResultAnim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/WinPanelResultAnim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/AudioCom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/AudioCom.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/AudioCnt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/AudioCnt.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HVSort/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/HV 1.psb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/HV 1.psb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps (1).controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps (1).controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps 1.psb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps 1.psb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps.psb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Huggyps.psb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/New Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/New Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Ресурс 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experemental/Ресурс 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationItemView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationItemView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationPanelView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/AnimationPanel/AnimationPanelView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/BackGroundPanel/BackGroundPanelView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/BackGroundPanel/BackGroundPanelView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HV.psb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HV.psb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HV2.psb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HV2.psb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVSession.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVSession.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVSession2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVSession2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVUI2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ItemsSkins/Full/HVUI2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ResulltPanel/ProgressPanel/ProgressPanelView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ResulltPanel/ProgressPanel/ProgressPanelView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Session/BoxComPb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Session/BoxComPb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/SkinPanel/SkinItemView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/SkinPanel/SkinItemView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/SkinPanel/SkinPanelView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/SkinPanel/SkinPanelView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 0.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/Items/AnimationSO 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 0.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/Items/SkinSO 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinScrObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinScrObj.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/WinPanel/LevelCompletePanelView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/WinPanel/LevelCompletePanelView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/AnimationListSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/AnimationListSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/BackGroundListSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/BackGroundListSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/LevelsSO/LevelListSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/LevelsSO/LevelListSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/Items/ProgressSO 4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/ProgressListSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/ProgressListSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinListScrObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinListScrObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/SkinlListSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/SkinlListSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Global.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Global.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/LevelsList.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/LevelsList.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/MainMenu.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/MainMenu.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/ResultMenu.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/ResultMenu.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Session.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Session.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/WinPanel.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/WinPanel.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Session.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Session.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/BoxAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Session/BoxAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/BoxAnim.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Session/BoxAnim.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/ButtonSizeAnim.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/ButtonSizeAnim.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/ButtonAnim.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PartAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Session/PartAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PartAnim.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Session/PartAnim.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Session.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Session.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/FullCom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/FullCom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxChooserCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxChooserCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/LevelCompleteCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/LevelCompleteCnt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControlersData/PartColorPacksCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/PartColorPacksCnt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationItemView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationItemView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView/LevelPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView/LevelPanelView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationPanelView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/MainMenuPanelVIew.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/MainMenuPanelVIew.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinItemView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinItemView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinPanelView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyInfoView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyInfoView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ResultMenuPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ResultMenuPanelView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinPanelView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinPanelView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,54 +78,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Global/VideoCom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PartTypeCom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ControlersData/LevelsCnt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/FullCom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/CreateAssetBundles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Result/DailyPanelView/DailyInfoView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ResultMenuPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyItemView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/ScriptsSO/ProgressScrObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxFillerCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/LevelsSO/ScriptsSO/LevelScrObjGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ProgressPanelView/ProgressPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ProgressPanelView/ProgressInfoView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinCompleteProgressPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinCompleteDailyPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinCompleteLevelPanelView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/ProgressCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/ProgressSO/ScriptsSO/ProgressListScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/LevelsSO/ScriptsSO/LevelScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/LevelsCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView/LevelPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/LevelsSO/ScriptsSO/LevelListScrObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/PartColorPacksCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/DailyCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/DailySo/ScriptsSO/DailyListScrObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PulsAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/ButtonSizeAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/ButtonAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/BoxAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/PartAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/DailyPanel/DailyInfoItemAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyInfoView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/WinPanelAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/WinPanelResultAnim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/ButtonAnim.cs" />
@@ -161,11 +112,36 @@
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinScrObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animation DOTween/Global/PulsAnim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinItemView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/FullCom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationItemView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/PartSawpCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/LevelCompleteCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Session/SessionPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxGeneratorCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BackMoveCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/AudioCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/AudioCom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/SessionCore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/LevelPanelView/LevelPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/MainMenuPanelVIew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/ResultMenuPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controlers/BoxChooserCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/BoxCom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/WinPanelView/WinPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/FullCom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/ResultMenuPanelView/DailyPanelView/DailyInfoView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/SkinPanelView/SkinPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/SkinsCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/AnimationsSO/SkriptsSO/AnimationListScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/SkinsSO/ScriptsSO/SkinListScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/AnimationCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/AnimationPanelView/AnimationPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/ScriptableObjects/BackGroundSO/SkriptsSO/BackGroundListScrObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/BackGroundCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/MainMenuPanelView/BackGroundPanelView/BackGroundPanelView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersData/PartColorPacksCnt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/videos/CreateAssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Global/VideoCom.cs" />
       </list>
     </option>
   </component>
@@ -236,6 +212,9 @@
       <workItem from="1659556424508" duration="1610000" />
       <workItem from="1659603803370" duration="8495000" />
       <workItem from="1659694247534" duration="19745000" />
+      <workItem from="1660205403472" duration="6404000" />
+      <workItem from="1660567586154" duration="7088000" />
+      <workItem from="1660732405328" duration="2143000" />
     </task>
     <servers />
   </component>

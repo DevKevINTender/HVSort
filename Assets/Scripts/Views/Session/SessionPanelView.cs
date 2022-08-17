@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using ControlersData;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,12 +27,16 @@ public class SessionPanelView : MonoBehaviour
 
     public void OpenMainMenu()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         mainMenuPanel.gameObject.SetActive(true);
         mainMenuPanel.InitView();
     }
 
     public void OpenResultMenu()
     {
+        AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+        audioCnt.CreateNewAudioElement(8);
         resultMenuPanel.gameObject.SetActive(true);
         resultMenuPanel.InitView();
     }

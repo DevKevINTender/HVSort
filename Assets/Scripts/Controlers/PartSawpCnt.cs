@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Controlers;
 using UnityEngine;
 using static SessionCore;
 public class PartSawpCnt : MonoBehaviour
@@ -19,6 +20,8 @@ public class PartSawpCnt : MonoBehaviour
             toBox.AddNewPart(swapPart);
             partSawpComplete?.Invoke(fromBox, toBox, swapPart);
             swapMoreWhenOne = true;
+            AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+            audioCnt.CreateNewAudioElement(1);
             PartSwap(fromBox,toBox);
         }
         else
@@ -29,6 +32,8 @@ public class PartSawpCnt : MonoBehaviour
             }
             else
             {
+                AudioCnt audioCnt = FindObjectOfType<AudioCnt>();
+                audioCnt.CreateNewAudioElement(4);
                 toBox.boxAnim.SwapMistacke();
             }
             

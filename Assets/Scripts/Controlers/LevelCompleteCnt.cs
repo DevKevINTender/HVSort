@@ -23,6 +23,7 @@ public class LevelCompleteCnt : MonoBehaviour
       if (coloredCount == composeCount)
       {
          Debug.Log("LevelComplete");
+         
          completeLevelDel?.Invoke();
       }
    }

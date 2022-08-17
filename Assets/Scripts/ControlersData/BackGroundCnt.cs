@@ -71,5 +71,11 @@ namespace ControlersData
 
             return closedBackGrounds;
         }
+        
+        public static int GetBackGroundCost()
+        {
+            BackGroundListSO.Load();
+            return BackGroundListSO.BackGroundCost;
+        }
     }
 }

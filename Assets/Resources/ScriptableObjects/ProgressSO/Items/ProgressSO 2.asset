@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ProgressSO 2
   m_EditorClassIdentifier: 
   id: 2
-  reward: 350
+  reward: 300
   needLevel: 3
   isCompleted: 0
   isGetReward: 0
